@@ -1,0 +1,16 @@
+.meal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+}
+
+.meal h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.form input {
+  width: 5vw;
+}

@@ -1,0 +1,15 @@
+.header {
+  background-color: aqua;
+  color: #000000;
+  padding: 0vh 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  padding: 1vh 2vw;
+  border: 0;
+  background-color: rgb(255, 102, 110);
+  color: white;
+}

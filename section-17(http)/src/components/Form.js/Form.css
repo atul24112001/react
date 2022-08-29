@@ -1,0 +1,111 @@
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+.card {
+  width: 60vw;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation-name: drop;
+  animation-duration: 0.5s;
+  padding: 2vh 1vw;
+}
+
+.control-box {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.form-controls select {
+  border: 2px solid rgb(184, 182, 182);
+  width: 95%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.form-controls {
+  width: 49%;
+  display: block;
+}
+
+.form-controls label {
+  display: block;
+  margin-bottom: 1vh;
+}
+
+.form-controls input {
+  border: 2px solid rgb(184, 182, 182);
+  width: 95%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.form-controls input:focus {
+  outline: 0;
+}
+
+.invalid input {
+  background-color: rgb(255, 199, 189);
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  transform: translateY(-1vh);
+}
+
+.form-action {
+  padding: 3vh 0;
+  width: 100%;
+  text-align: center;
+}
+
+.form-action button {
+  width: 90%;
+  background-color: brown;
+  color: white;
+  border: 0;
+  padding: 2vh 1vw;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.form-action button:hover {
+  background-color: rgb(167, 69, 69);
+}
+
+.form-action button:disabled {
+  background-color: #ccc;
+  color: #292929;
+  cursor: not-allowed;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

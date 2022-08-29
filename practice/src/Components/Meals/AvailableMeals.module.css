@@ -1,0 +1,7 @@
+.meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+  width: 100vw;
+}
